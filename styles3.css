@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#header-img {
+    width: 100px; /* Ajustar según el tamaño de tu logo */
+    height: auto;
+}
+
+#nav-bar {
+    display: flex;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+    margin-top: 100px; /* Para compensar el espacio del nav-bar */
+}
+
+/* Estilos para el formulario */
+#form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilos para el video */
+#video {
+    margin-top: 20px;
+    /* Estilos adicionales según sea necesario para el video */
+}
+
+/* Media query */
+@media (max-width: 768px) {
+    /* Estilos adicionales para dispositivos de pantalla pequeña */
+    #nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para el video */
+#video {
+    margin-top: 20px;
+}
+
+/* Estilos para el iframe del video */
+#video iframe {
+    width: 100%; /* Hace que el video ocupe todo el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+}

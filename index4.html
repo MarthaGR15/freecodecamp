@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación Técnica</title>
+  <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>
+      <h1>Documentación Técnica</h1>
+    </header>
+    <ul>
+      <li><a class="nav-link" href="#HTML_and_CSS">HTML and CSS</a></li>
+      <li><a class="nav-link" href="#JavaScript">JavaScript</a></li>
+      <li><a class="nav-link" href="#Python">Python</a></li>
+      <li><a class="nav-link" href="#Java">Java</a></li>
+      <li><a class="nav-link" href="#C++">C++</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    <section id="HTML_and_CSS" class="main-section">
+      <header>
+        <h2>HTML and CSS</h2>
+      </header>
+      <p>HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building web pages.</p>
+      <p>HTML provides the structure of the page, while CSS dictates how it looks.</p>
+      <code>&lt;!DOCTYPE html&gt;</code>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+      </ul>
+    </section>
+    
+    <section id="JavaScript" class="main-section">
+      <header>
+        <h2>JavaScript</h2>
+      </header>
+      <p>JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a language that is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.</p>
+      <p>JavaScript is widely used for adding interactivity and dynamic behavior to web pages.</p>
+      <code>console.log("Hello, world!");</code>
+      <ul>
+        <li>Variables</li>
+        <li>Functions</li>
+      </ul>
+    </section>
+    
+    <section id="Python" class="main-section">
+      <header>
+        <h2>Python</h2>
+      </header>
+      <p>Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
+      <p>Python is commonly used for web development, data analysis, artificial intelligence, and more.</p>
+      <code>print("Hello, world!")</code>
+      <ul>
+        <li>Lists</li>
+        <li>Dictionaries</li>
+      </ul>
+    </section>
+    
+    <section id="Java" class="main-section">
+      <header>
+        <h2>Java</h2>
+      </header>
+      <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+      <p>Java is commonly used for building enterprise-scale applications, mobile apps, and large systems.</p>
+      <code>System.out.println("Hello, world!");</code>
+      <ul>
+        <li>Classes</li>
+        <li>Objects</li>
+      </ul>
+    </section>
+    
+    <section id="C++" class="main-section">
+      <header>
+        <h2>C++</h2>
+      </header>
+      <p>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes".</p>
+      <p>C++ is widely used for developing system/application software, game development, and performance-critical applications.</p>
+      <code>cout << "Hello, world!" << endl;</code>
+      <ul>
+        <li>Pointers</li>
+        <li>Classes</li>
+      </ul>
+    </section>
+  </main>
+  
+  <script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = event.target.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
